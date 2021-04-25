@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Frontend_Infowargame_v2/static/css/main.7d180cbf.chunk.css",
+    "main.js": "/Frontend_Infowargame_v2/static/js/main.bdf72921.chunk.js",
+    "main.js.map": "/Frontend_Infowargame_v2/static/js/main.bdf72921.chunk.js.map",
+    "runtime-main.js": "/Frontend_Infowargame_v2/static/js/runtime-main.9341a930.js",
+    "runtime-main.js.map": "/Frontend_Infowargame_v2/static/js/runtime-main.9341a930.js.map",
+    "static/js/2.3ebd4c8f.chunk.js": "/Frontend_Infowargame_v2/static/js/2.3ebd4c8f.chunk.js",
+    "static/js/2.3ebd4c8f.chunk.js.map": "/Frontend_Infowargame_v2/static/js/2.3ebd4c8f.chunk.js.map",
+    "static/js/3.97b96075.chunk.js": "/Frontend_Infowargame_v2/static/js/3.97b96075.chunk.js",
+    "static/js/3.97b96075.chunk.js.map": "/Frontend_Infowargame_v2/static/js/3.97b96075.chunk.js.map",
+    "index.html": "/Frontend_Infowargame_v2/index.html",
+    "static/css/main.7d180cbf.chunk.css.map": "/Frontend_Infowargame_v2/static/css/main.7d180cbf.chunk.css.map",
+    "static/js/2.3ebd4c8f.chunk.js.LICENSE.txt": "/Frontend_Infowargame_v2/static/js/2.3ebd4c8f.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/Frontend_Infowargame_v2/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9341a930.js",
+    "static/js/2.3ebd4c8f.chunk.js",
+    "static/css/main.7d180cbf.chunk.css",
+    "static/js/main.bdf72921.chunk.js"
+  ]
+}
