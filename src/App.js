@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 `;
 
 function App() {
-  const [isLoggedIn, useIsLoggedIn] = useState(false);
+  const [isLoggedIn, useIsLoggedIn] = useState(true);
 
   return (
     <Router>
