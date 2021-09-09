@@ -1,14 +1,18 @@
 import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
+import DefaultMyPage from "../pages/DefaultMyPage";
+import CtfListPage from "../pages/CtfListPage";
+import CtfDetailPage from "../pages/CtfDetailPage";
+import NoticePage from "../pages/NoticePage";
 
 const LoggedInRoutes = () => (                  //로그인 이후 접근 가능
   <Switch>
-    <Route exact path="/" component={null} />       { /* 메인화면 */  }
+    <Route exact path="/" component={null}>Main page</Route>       { /* 메인화면 */  }
     <Route path="/rank" component={null} />         { /* 랭킹 */ }
-    <Route path="/notice/:id" component={null} />   { /* 공지사항 아이디 Detail */ }
-    <Route path="/profile" component={null} />      { /* 유저 페이지 */ }
-    <Route path="/ctf" component={null} />          { /*ctf 문제리스트 페이지 */ }
-    <Route path="/ctf/:id" component={null} />      { /*ctf 문제 Detail페이지 */ }
+    <Route path="/notice/:id" component={NoticePage} />   { /* 공지사항 아이디 Detail */ }
+    <Route path="/profile" component={DefaultMyPage} />      { /* 유저 페이지 */ }
+    <Route exact path="/ctf" component={CtfListPage} />          { /*ctf 문제리스트 페이지 */ }
+    <Route path="/ctf/:id" component={CtfDetailPage} />      { /*ctf 문제 Detail페이지 */ }
     <Route path="/wargame" component={null} />      { /*wargame 페이지 */ }
     <Route path="/wargame/:id" component={null} />  { /*wargame 문제사이트 */ }
     <Route path="/administration" component={null} /> { /*admin 페이지 */ }
@@ -30,6 +34,7 @@ const LoggedOutRoutes = () => (                 //로그인 이전 접근 경로
 );
 
 const AppRouter = ({ isLoggedIn }) => 
-  isLoggedIn ? <LoggedInRoutes /> : <LoggedOutRoutes />;
+  <LoggedInRoutes />
+  // isLoggedIn ? <LoggedInRoutes /> : <LoggedOutRoutes />;
 
 export default AppRouter;
