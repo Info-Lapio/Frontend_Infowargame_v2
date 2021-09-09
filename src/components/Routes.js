@@ -33,7 +33,6 @@ const LoggedOutRoutes = () => (                 //로그인 이전 접근 경로
 );
 
 const AppRouter = ({ isLoggedIn }) => 
-  <LoggedInRoutes />
-  // isLoggedIn ? <LoggedInRoutes /> : <LoggedOutRoutes />;
+  isLoggedIn ? <LoggedInRoutes /> : <LoggedOutRoutes />
 
 export default AppRouter;
