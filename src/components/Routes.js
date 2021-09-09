@@ -6,7 +6,7 @@ import CtfDetailPage from "../pages/CtfDetailPage";
 
 const LoggedInRoutes = () => (                  //로그인 이후 접근 가능
   <Switch>
-    <Route exact path="/" component={null}>Test</Route>       { /* 메인화면 */  }
+    <Route exact path="/" component={null}></Route>       { /* 메인화면 */  }
     <Route path="/rank" component={null} />         { /* 랭킹 */ }
     <Route path="/notice/:id" component={null} />   { /* 공지사항 아이디 Detail */ }
     <Route path="/profile" component={DefaultMyPage} />      { /* 유저 페이지 */ }

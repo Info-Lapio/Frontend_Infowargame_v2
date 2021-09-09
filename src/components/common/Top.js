@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const BannerStyled = styled.div`
@@ -34,7 +35,7 @@ const LogoutMenuStyled = styled.div`
     display: flex;
 `;
 const LogoutTitleStyled = styled.div`
-    padding: 10px 20px 10px 15px; 
+    padding: 13px 20px 7px 15px; 
 
     font-size: 50px;
     height: 100%;
@@ -42,18 +43,23 @@ const LogoutTitleStyled = styled.div`
     vertical-align: middle;
 `;
 const LogoStyled = styled.img`
-    object-fit: cover;
+    width: 100px;
+    height: auto;
 `;
 
 const Top = ({props}) => {
     return (
         <BannerStyled>
-            <LogoStyled src={process.env.PUBLIC_URL + '/images/logo.png'} alt="페이지 로고" />
+            <Link to="/" style={{width: "1000px;"}}>
+                <LogoStyled style={{margin: "5px 0 0 5px"}}src={process.env.PUBLIC_URL + '/images/logo.png'} alt="페이지 로고" />
+            </Link>
             <MainTitleStyled>{props}</MainTitleStyled>
-            <LogoutMenuStyled>
-                <LogoStyled src={process.env.PUBLIC_URL + '/images/Login_logo.png'} alt="페이지 로고" />
-                <LogoutTitleStyled>Logout</LogoutTitleStyled>
-            </LogoutMenuStyled>
+            <Link to="" style={{textDecoration: "none", color: "black"}}>
+                <LogoutMenuStyled>
+                    <LogoStyled src={process.env.PUBLIC_URL + '/images/Login_logo.png'} alt="페이지 로고" />
+                    <LogoutTitleStyled>Logout</LogoutTitleStyled>
+                </LogoutMenuStyled>
+            </Link>
         </BannerStyled> 
     );
 };
