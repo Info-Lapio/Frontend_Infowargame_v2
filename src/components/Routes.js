@@ -1,5 +1,6 @@
 import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
+import MainBoard from "../pages/MainBoardPage";
 import DefaultMyPage from "../pages/DefaultMyPage";
 import CtfListPage from "../pages/CtfListPage";
 import CtfDetailPage from "../pages/CtfDetailPage";
@@ -7,7 +8,7 @@ import NoticePage from "../pages/NoticePage";
 
 const LoggedInRoutes = () => (                  //로그인 이후 접근 가능
   <Switch>
-    <Route exact path="/" component={null}>Main page</Route>       { /* 메인화면 */  }
+    <Route exact path="/" component={MainBoard}></Route>       { /* 메인화면 */  }
     <Route path="/rank" component={null} />         { /* 랭킹 */ }
     <Route path="/notice/:id" component={NoticePage} />   { /* 공지사항 아이디 Detail */ }
     <Route path="/profile" component={DefaultMyPage} />      { /* 유저 페이지 */ }
